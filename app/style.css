@@ -1,0 +1,17 @@
+body{
+    background: #202020;
+}
+
+.wrapper{
+    background: #242424;
+}
+
+.card{
+    background: #202020;
+}
+
+.heading{
+    background: radial-gradient(circle, #e2e8f0, #d4d4d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
