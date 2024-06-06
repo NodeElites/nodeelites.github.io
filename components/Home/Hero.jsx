@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <main className="flex justify-center items-center w-full">
-      <div className="flex flex-col justify-center items-center gap-1 px-2 py-20 w-[95vw] lg:w-[80vw]">
+      <div className="flex flex-col justify-center items-center gap-1 px-2 mt-20 w-[95vw] lg:w-[80vw]">
         <h1 className="text-4xl font-bold text-slate-200 text-center heading self-start">
           <p className={syne.className}>{heading}</p>
         </h1>

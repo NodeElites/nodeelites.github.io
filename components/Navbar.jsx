@@ -34,10 +34,6 @@ const Navbar = () => {
       name: "Projects",
       url: "",
     },
-    {
-      name: "About",
-      url: "",
-    },
   ];
 
   return (
