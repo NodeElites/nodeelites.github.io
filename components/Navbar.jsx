@@ -37,8 +37,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-center items-center w-full">
-      <div className="lg:w-[80vw] w-[95vw] md:px-5 px-3 py-3 sticky top-0 rounded-lg md:rounded-full mt-2 wrapper">
+    <nav className="flex justify-center items-center w-full sticky top-0">
+      <div className="lg:w-[80vw] w-[95vw] md:px-5 px-3 py-3 rounded-lg mt-2 wrapper">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center text-slate-200 text-3xl font-bold px-3">
@@ -49,7 +49,7 @@ const Navbar = () => {
             {menuItems.map((menuItems, index) => (
               <Link
                 href={menuItems.url}
-                className="hover:bg-slate-300 hover:text-zinc-900 transition ease-in-out cursor-pointer px-3 py-2 font-medium rounded-full"
+                className="hover:bg-slate-300 hover:text-zinc-900 transition ease-in-out cursor-pointer px-3 py-2 font-medium rounded-lg"
                 key={index}
               >
                 {menuItems.name}
