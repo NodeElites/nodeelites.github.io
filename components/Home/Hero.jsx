@@ -11,7 +11,7 @@ const Hero = () => {
     "A community of developers driving innovation and excellence. Join us to collaborate on cutting-edge projects and elevate your skills to new heights";
 
   return (
-    <main className="flex justify-center items-center w-full">
+    <main className="flex justify-center items-center w-full cxtr">
       <div className="flex flex-col justify-center items-center gap-3 px-2 py-40 lg:py-[200px] w-[95vw] lg:w-[80vw]">
         {/* <h1 className="text-4xl font-bold text-slate-200 text-center heading self-start">
           <p className={syne.className}>{heading}</p>
