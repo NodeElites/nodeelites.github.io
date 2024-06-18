@@ -1,10 +1,10 @@
-import { Syne } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import "./style.css"
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const syne = Syne({ subsets: ["latin"] });
+const syne = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NodeElites",

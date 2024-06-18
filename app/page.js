@@ -3,6 +3,7 @@ import Contributors from '@/components/Home/Contributors'
 import Hero from '@/components/Home/Hero'
 import Introduction from '@/components/Home/Introduction'
 import Potential from '@/components/Home/Potential'
+import Projects from '@/components/Home/Projects'
 import React from 'react'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
     <div>
       <Hero />
       <Potential />
+      <Projects />
       <Contributors />
       <Introduction />
       <Community />
