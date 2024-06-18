@@ -1,5 +1,7 @@
 import React from "react";
 import { FaRegUser } from "react-icons/fa";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Contributors = () => {
     const heading = "Meet Our Top Contributors";
@@ -38,6 +40,7 @@ const Contributors = () => {
                </div>
                 ))}
                 </div>
+                <Link href='' target="blank" className="px-3 py-2 font-semibold text-center mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg">More Contributors &rarr;</Link>
             </div>
         </main>
     );

@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowTrendUp } from "react-icons/fa6";
 
-const Projects = () => {
-    const heading = "Explore NodeElites Projects";
-    const desc1 = "Discover innovative projects built by the talented developers in the NodeElites community";
+const PContribute = () => {
+    const heading = "Projects You Can Contribute To";
+    const desc1 = "Get involved in exciting projects within the NodeElites community. Whether you're a seasoned developer or just starting, there's a project for you. Join us in building innovative solutions and contributing to open-source software";
 
     const projexts = [
         {
@@ -34,14 +34,14 @@ const Projects = () => {
                <div key={index} className="flex flex-col justify-center items-center gap-2 p-5 rounded-lg wrapper">
                 <h1 className="text-5xl pb-3 text-slate-100 font-semibold proj">{projext.name}</h1>
                 <h1 className="text-slate-300 font-semibold">{projext.desc}</h1>
-                <Link href={projext.link} target="blank" className="px-3 py-2 font-semibold self-start mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg flex gap-1 items-center">View Project <FaArrowTrendUp /></Link>
+                <Link href={projext.link} target="blank" className="px-3 py-2 font-semibold self-start mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg flex gap-1 items-center">Contribute <FaArrowTrendUp /></Link>
                </div>
                 ))}
                 </div>
-                <Link href='' target="blank" className="px-3 py-2 font-semibold text-center mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg">More Projects &rarr;</Link>
+                <Link href='' target="blank" className="px-3 py-2 font-semibold text-center mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg">More Projects To Contribute &rarr;</Link>
             </div>
         </main>
     );
 };
 
-export default Projects;
+export default PContribute;
