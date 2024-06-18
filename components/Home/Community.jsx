@@ -2,6 +2,7 @@ import React from "react";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 const Community = () => {
@@ -23,6 +24,11 @@ const Community = () => {
             name: "Twitter",
             link: "",
             icon: <FaXTwitter />,
+        },
+        {
+            name: "Instagram",
+            link: "",
+            icon: <FaInstagram />,
         },
     ]
 
