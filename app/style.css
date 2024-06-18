@@ -9,7 +9,7 @@ body{
 .wrapper{
     background: #55555555;
     -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(px);
+    backdrop-filter: blur(2px);
 }
 
 .card{
@@ -23,7 +23,7 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 6px;
     background-color: #1e1e1e;
 }
 

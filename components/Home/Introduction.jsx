@@ -1,7 +1,5 @@
 import React from "react";
 import { Syne } from "next/font/google";
-import { GoCodeReview } from "react-icons/go";
-import Link from "next/link";
 
 const syne = Syne({ subsets: ["latin"] });
 
@@ -14,7 +12,7 @@ const Introduction = () => {
     return (
         <main className="flex justify-center items-center w-full">
             <div className="flex flex-col justify-center items-center gap-3 px-2 mb-20 w-[95vw] lg:w-[80vw]">
-                <h1 className="flex gap-2 text-3xl font-semibold text-slate-200 self-start items-center">{heading} <p><GoCodeReview /></p></h1>
+                <h1 className="flex gap-2 text-3xl font-semibold text-slate-200 self-start items-center">{heading}</h1>
                <div className="flex flex-col justify-center items-center gap-2 p-5 rounded-lg wrapper">
                 <h1 className="font-medium text-slate-200 self-start">{desc1}</h1>
                 <h1 className="font-medium text-slate-200 self-start">{desc2}</h1>

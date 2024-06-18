@@ -2,9 +2,7 @@
 import { useState } from "react";
 import React from "react";
 import Link from "next/link";
-import { Syne } from "next/font/google";
 
-const syne = Syne({ subsets: ["latin"] });
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,15 +32,19 @@ const Navbar = () => {
       name: "Projects",
       url: "",
     },
+    {
+      name: "Resources",
+      url: "",
+    },
   ];
 
   return (
-    <nav className="flex justify-center items-center w-full sticky top-0">
+    <nav className="flex justify-center items-center w-full">
       <div className="lg:w-[80vw] w-[95vw] md:px-5 px-3 py-3 rounded-lg mt-2 wrapper">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center text-slate-200 text-3xl font-bold px-3">
-            <h1 className={syne.className}>{logoName}</h1>
+          <div className="flex items-center text-slate-200 text-2xl md:text-3xl font-bold px-3">
+            <h1>{logoName}</h1>
           </div>
           {/* Desktop Menu */}
           <div className="hidden lg:flex justify-center items-center gap-5 text-slate-200">

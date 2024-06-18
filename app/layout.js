@@ -2,6 +2,7 @@ import { Syne } from "next/font/google";
 import "./globals.css";
 import "./style.css"
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const syne = Syne({ subsets: ["latin"] });
 
@@ -16,7 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={syne.className}>
         <Navbar />
-        {children}</body>
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }
