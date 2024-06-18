@@ -7,15 +7,15 @@ const Potential = () => {
     const benefits = [
         {
             name: "Networking",
-            desc: "Connect with other Node.js developers and industry experts, and build lasting professional relationships.",
+            desc: "Connect with other Node.js developers and industry experts, and build lasting professional relationships",
         },
         {
             name: "Learning Resources",
-            desc: "Access a vast library of tutorials, workshops, and webinars to deepen your Node.js knowledge and skills.",
+            desc: "Access a vast library of tutorials, workshops, and webinars to deepen your Node.js knowledge and skills",
         },
         {
             name: "Career Opportunities",
-            desc: "Discover job postings, mentorship programs, and networking events to help you advance your career.",
+            desc: "Discover job postings, mentorship programs, and networking events to help you advance your career",
         },
     ]
 
@@ -27,7 +27,7 @@ const Potential = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-stretch gap-5 mt-2 w-full">
                 {benefits.map((benefit , index)=>(
                <div key={index} className="flex flex-col justify-center items-center gap-2 p-5 rounded-lg wrapper">
-                <h1 className="text-2xl text-slate-100 font-semibold">{benefit.name}</h1>
+                <h1 className="text-2xl text-center text-slate-100 font-semibold">{benefit.name}</h1>
                 <h1 className="text-slate-300 font-semibold">{benefit.desc}</h1>
                </div>
                 ))}

@@ -17,7 +17,7 @@ const Home = () => {
       <PContribute />
       <Contributors />
       <Resources />
-      <Introduction />
+      {/* <Introduction /> */}
       <Community />
     </div>
   )
