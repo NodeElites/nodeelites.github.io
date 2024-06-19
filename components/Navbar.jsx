@@ -53,8 +53,8 @@ const Navbar = () => {
       <div className="lg:w-[80vw] w-[95vw] md:px-5 px-3 py-3 rounded-lg mt-2 wrapper">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center text-slate-200 text-2xl md:text-3xl font-bold px-3">
-            <h1 className={syne.className}>{logoName}</h1>
+          <div className="flex items-center cursor-pointer text-slate-200 text-2xl md:text-3xl font-bold px-3">
+            <Link href='/' className={syne.className}>{logoName}</Link>
           </div>
           {/* Desktop Menu */}
           <div className="hidden lg:flex justify-center items-center gap-5 text-slate-200">
