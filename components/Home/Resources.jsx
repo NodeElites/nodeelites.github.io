@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import Link from "next/link";
 import Resourxes from "@/data/resources";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Resources = () => {
     const heading = "Resources";
@@ -23,7 +24,7 @@ const Resources = () => {
                </div>
                 ))}
                 </div>
-                <Link href='' target="blank" className="px-3 py-2 font-semibold text-center mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg">More Resources &rarr;</Link>
+                <Link href='' target="blank" className="px-3 py-2 font-semibold text-center mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg flex gap-1 items-center">More Resources <p><FaArrowRight /></p></Link>
             </div>
         </main>
     );
