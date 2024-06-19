@@ -4,9 +4,9 @@ import { Syne } from "next/font/google";
 const syne = Syne({ subsets: ["latin"] });
 
 const Hero = () => {
-  const heading = "Resources";
+  const heading = "Meet Our Top Contributors";
   const desc =
-    "Enhance your development skills with our curated list of resources. From tutorials and documentation to tools and libraries, we’ve got you covered";
+    "These are the members who have made significant contributions to the NodeElites community";
 
   return (
     <main className="flex justify-center items-center w-full cxtr">

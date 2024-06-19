@@ -35,6 +35,14 @@ const Navbar = () => {
       url: "/projects",
     },
     {
+      name: "Contribute",
+      url: "/contribute",
+    },
+    {
+      name: "Contributors",
+      url: "/contributors",
+    },
+    {
       name: "Resources",
       url: "/resources",
     },
