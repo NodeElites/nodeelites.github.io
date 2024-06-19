@@ -2,52 +2,31 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "./style.css"
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Head from "next/head";
+import Footer from "@/components/Footer"
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "NodeElites",
-  description: "NodeElites is a vibrant developers community where developers share knowledge, collaborate on projects, and grow their skills, fostering an inclusive, supportive environment committed to open-source",
-  keywords: ["NodeElites", "NodeElites Community" , "Node.js", "JavaScript", "web development", "community", "collaboration", "innovation"],
-  openGraph: {
-    title: "NodeElites",
-    description: "NodeElites is a vibrant developers community where developers share knowledge, collaborate on projects, and grow their skills, fostering an inclusive, supportive environment committed to open-source",
-    images: [
-      {
-        url: "/linkpreview.png",
-        width: 500,
-        height: 500,
-        alt: "NodeElites Community",
-      },
-    ],
-  },
-};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords.join(', ')} />
+      <head>
+       <title>NodeElites</title>
+        <meta name="description" content="NodeElites is a vibrant developers community where developers share knowledge, collaborate on projects, and grow their skills, fostering an inclusive, supportive environment committed to open-source." />
+        <meta name="keywords" content="NodeElites, developers community, collaboration, open-source, skill development, inclusive environment, supportive community" />
+        <meta name="author" content="NodeElites Community" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
-        {metadata.openGraph.images.map((image, index) => (
-          <meta key={index} property="og:image" content={image.url} />
-        ))}
-        {metadata.openGraph.images.map((image, index) => (
-          <meta key={index + 1} property="og:image:width" content={image.width} />
-        ))}
-        {metadata.openGraph.images.map((image, index) => (
-          <meta key={index + 2} property="og:image:height" content={image.height} />
-        ))}
-        {metadata.openGraph.images.map((image, index) => (
-          <meta key={index + 3} property="og:image:alt" content={image.alt} />
-        ))}
-      </Head>
+        <meta property="og:title" content="NodeElites" />
+        <meta property="og:description" content="NodeElites is a vibrant developers community where developers share knowledge, collaborate on projects, and grow their skills, fostering an inclusive, supportive environment committed to open-source." />
+        <meta property="og:image" content="/linkpreview.png" />
+        <meta property="og:url" content="https://nodeelites.github.io" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="NodeElites" />
+        <meta name="twitter:description" content="NodeElites is a vibrant developers community where developers share knowledge, collaborate on projects, and grow their skills, fostering an inclusive, supportive environment committed to open-source." />
+        <meta name="twitter:image" content="/linkpreview.png" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
