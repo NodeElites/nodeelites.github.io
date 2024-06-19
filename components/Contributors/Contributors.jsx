@@ -1,7 +1,5 @@
 import React from "react";
 import { FaRegUser } from "react-icons/fa";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
 import Contrxs from "@/data/contributors";
 
 const Contributors = () => {

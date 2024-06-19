@@ -27,7 +27,7 @@ const PContribute = () => {
                         </div>
                     ))}
                 </div>
-                <Link href='/contribute' target="blank" className="px-3 py-2 font-semibold text-center mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg flex gap-1 items-center">More To Contribute <p><FaArrowRight /></p></Link>
+                <Link href='/contribute' className="px-3 py-2 font-semibold text-center mt-2 text-zinc-900 bg-slate-200 hover:bg-slate-300 transition ease-in-out rounded-lg flex gap-1 items-center">More To Contribute <p><FaArrowRight /></p></Link>
             </div>
         </main>
     );
