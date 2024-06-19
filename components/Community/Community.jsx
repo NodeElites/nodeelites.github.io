@@ -6,8 +6,6 @@ import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 const Community = () => {
-    const heading = "Join The Community";
-    const desc1 = "Connect with developers and designers to share knowledge, collaborate on projects, and enhance your skills in a supportive, open-source focused environment";
 
     const communities = [
         {
@@ -33,10 +31,8 @@ const Community = () => {
     ]
 
     return (
-        <main className="flex justify-center items-center w-full" id="community">
+        <main className="flex justify-center items-center w-full">
             <div className="flex flex-col justify-center items-center gap-3 px-2 mb-20 w-[95vw] lg:w-[80vw]">
-                <h1 className="flex gap-2 text-3xl font-semibold text-slate-200 self-start items-center">{heading}</h1>
-                <h1 className="font-medium text-xl lg:text-2xl text-slate-200 self-start">{desc1}</h1>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-stretch gap-5 mt-2 w-full">
                 {communities.map((communitie , index)=>(
                <div key={index} className="flex flex-col text-center justify-center items-center gap-2 p-5 rounded-lg wrapper">

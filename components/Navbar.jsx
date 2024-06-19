@@ -24,19 +24,19 @@ const Navbar = () => {
   const menuItems = [
     {
       name: "Home",
-      url: "",
+      url: "/",
     },
-    {
-      name: "Community",
-      url: "",
-    },
+    // {
+    //   name: "Community",
+    //   url: "",
+    // },
     {
       name: "Projects",
-      url: "",
+      url: "/projects",
     },
     {
       name: "Resources",
-      url: "",
+      url: "/resources",
     },
   ];
 

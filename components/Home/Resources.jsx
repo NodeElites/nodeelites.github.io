@@ -1,28 +1,13 @@
 import React from "react";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import Link from "next/link";
+import Resourxes from "@/data/resources";
 
 const Resources = () => {
     const heading = "Resources";
     const desc1 = "Enhance your development skills with our curated list of resources. From tutorials and documentation to tools and libraries, we’ve got you covered";
 
-    const resourxes = [
-        {
-            name: "Node.js Documentation",
-            desc: "Official Node.js documentation to help you get started and master Node.js.",
-            link: "https://nodejs.org/en/docs/"
-          },
-          {
-            name: "JavaScript Info",
-            desc: "Comprehensive guide to modern JavaScript, from basics to advanced topics.",
-            link: "https://javascript.info/"
-          },
-          {
-            name: "MDN Web Docs",
-            desc: "A comprehensive resource for web developers, covering HTML, CSS, JavaScript, and more.",
-            link: "https://developer.mozilla.org/"
-          }
-    ]
+    const displayresourxes = Resourxes.slice(0,3);
 
     return (
         <main className="flex justify-center items-center w-full">
@@ -30,7 +15,7 @@ const Resources = () => {
                 <h1 className="flex gap-2 text-3xl font-semibold text-slate-200 self-start items-center">{heading}</h1>
                 <h1 className="font-medium text-xl lg:text-2xl text-slate-200 self-start">{desc1}</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-stretch gap-5 mt-2 w-full">
-                {resourxes.map((resourxe , index)=>(
+                {displayresourxes.map((resourxe , index)=>(
                <div key={index} className="flex flex-col justify-center items-center gap-2 p-5 rounded-lg wrapper">
                 <h1 className="text-2xl text-slate-100 font-semibold">{resourxe.name}</h1>
                 <h1 className="text-slate-300 font-semibold">{resourxe.desc}</h1>
