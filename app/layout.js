@@ -4,11 +4,11 @@ import "./style.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = new Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
-    <>
+    <html lang="en">
       <head>
         <meta name="title" content="NodeElites" />
         <meta name="description" content="NodeElites is a vibrant developers community where developers share knowledge, collaborate on projects, and grow their skills, fostering an inclusive, supportive environment committed to open-source" />
@@ -23,11 +23,11 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content="NodeElites is a vibrant developers community where developers share knowledge, collaborate on projects, and grow their skills, fostering an inclusive, supportive environment committed to open-source" />
         <meta name="twitter:image" content="https://nodeelites.github.io/linkpreview.png" />
       </head>
-      <body className={inter}>
+      <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />
       </body>
-    </>
+    </html>
   );
 }
