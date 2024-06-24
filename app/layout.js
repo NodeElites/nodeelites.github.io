@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <title>NodeElites</title>
         <meta name="title" content="NodeElites" />
         <meta name="description" content="NodeElites is a vibrant developers community where developers share knowledge, collaborate on projects, and grow their skills, fostering an inclusive, supportive environment committed to open-source" />
         <meta property="og:type" content="website" />
