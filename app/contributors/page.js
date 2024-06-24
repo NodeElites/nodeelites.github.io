@@ -3,7 +3,7 @@ import Hero from "@/components/Contributors/Hero";
 import React from "react";
 
 const Home = () => {
-    return(
+    return (
         <main>
             <Hero />
             <Contributors />

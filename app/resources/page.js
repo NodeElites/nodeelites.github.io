@@ -3,7 +3,7 @@ import Resources from "@/components/Resources/Resources";
 import React from "react";
 
 const Home = () => {
-    return(
+    return (
         <main>
             <Hero />
             <Resources />

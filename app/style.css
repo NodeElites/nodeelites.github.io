@@ -1,25 +1,19 @@
-body{
+body {
     background: #202020;
-    /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a7a7a7' fill-opacity='0.08'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    height: 100vh;
-    scroll-behavior: smooth; */
 }
 
-.wrapper{
+.wrapper {
     background: #55555555;
-/*     -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px); */
 }
 
-.card{
+.card {
     background: #202020;
 }
 
-.heading{
+.heading {
     background: radial-gradient(circle, #f1f5f9, #d8dbdf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -36,10 +30,3 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background-color: #313131;
 }
-
-/* .proj {
-    background: -webkit-radial-gradient(#eee, #cbd5e1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 5px #ffffffa1;
-} */

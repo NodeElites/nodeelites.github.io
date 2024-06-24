@@ -5,8 +5,8 @@ import React from 'react'
 const Home = () => {
   return (
     <main>
-        <Hero />
-        <Community />
+      <Hero />
+      <Community />
     </main>
   )
 }

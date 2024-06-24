@@ -3,7 +3,7 @@ import Projects from "@/components/Projects/Projects";
 import React from "react";
 
 const Home = () => {
-    return(
+    return (
         <main>
             <Hero />
             <Projects />
