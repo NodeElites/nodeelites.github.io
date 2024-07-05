@@ -1,15 +1,36 @@
 body {
+    background-image: 
+      linear-gradient(#55555530 1px, transparent 1px),
+      linear-gradient(90deg, #55555530 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-color: #181b1b;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
     scroll-behavior: smooth;
-    background: #18181b;
-}
+    position: relative;
+    z-index: 0;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: -1;
+    pointer-events: none;
+  }
 
-/* .wrapper {
+.wrapper {
     background: #55555555;
 }
 
 .card {
     background: #202020;
-} */
+}
 
 .heading {
     background: radial-gradient(circle, #f1f5f9, #d8dbdf);

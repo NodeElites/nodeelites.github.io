@@ -26,7 +26,7 @@ const Potential = () => {
                 <h1 className="font-medium text-xl lg:text-2xl text-slate-200 self-start">{desc1}</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-stretch gap-5 mt-2 w-full">
                     {benefits.map((benefit, index) => (
-                        <div key={index} className="flex flex-col justify-center items-center gap-2 p-5 rounded-lg bg-zinc-800">
+                        <div key={index} className="flex flex-col justify-center items-center gap-2 p-5 rounded-lg wrapper">
                             <h1 className="text-2xl text-center text-slate-100 font-semibold">{benefit.name}</h1>
                             <h1 className="text-slate-300 font-semibold">{benefit.desc}</h1>
                         </div>

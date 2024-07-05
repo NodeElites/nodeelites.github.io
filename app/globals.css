@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background-rgb: 24,24,27;
-}
-
-body {
-  background: var(--background-rgb);
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
